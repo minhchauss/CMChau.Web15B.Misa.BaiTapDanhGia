@@ -1,0 +1,66 @@
+input[type=text],
+input[type=date],
+input[type=email] {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=email] :focus,
+input:focus {
+    border-color: #019160;
+}
+
+input[type=text].input-search {
+    background-image: url('../../icon/search.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 16px;
+    background-size: 20px;
+    padding-left: 40px;
+}
+
+select:focus {
+    border-color: #019160;
+}
+
+.input-group .input-group-salary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-group .input-group-salary input {
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    text-align: right;
+}
+
+.input-group-salary input:focus,
+.input-span {
+    border-color: #019160;
+}
+
+.input-span {
+    border: 1px solid #bbbbbb;
+    width: 40px;
+    height: 38px;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.input-span span {
+    color: black;
+    font-weight: 400;
+    font-style: oblique;
+}

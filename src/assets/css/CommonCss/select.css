@@ -1,0 +1,4 @@
+select:focus,
+select:hover {
+    border-color: #019160;
+}

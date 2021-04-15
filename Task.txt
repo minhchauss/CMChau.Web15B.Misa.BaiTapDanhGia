@@ -1,0 +1,25 @@
+1, Style guideline:
+    -Cho combobox
+    -Cho nút xóa
+    -Hoàn thiện form nhập thông tin
+
+
+2,Form nhập và sửa
+    -Mặc đinh focus vào ô mã nhân viên
+    -Mã tự động tăng
+    -Bắt buộc nhập vào ô đánh dấu *, hiện cảnh báo /thông báo khi không nhập
+    -Fomat tiền tệ : 2.000.000
+    -Sử dụng tabindex
+
+3,Xóa
+    -Hiển thị cảnh báo: bạn có muốn xóa  [mã nhân viên] không?
+
+
+4,Yêu cầu chung
+    -Validate Email
+    -Cảnh báo khi nhập mã trùng
+    -Lọc dữ liệu từ combobox
+
+
+
+

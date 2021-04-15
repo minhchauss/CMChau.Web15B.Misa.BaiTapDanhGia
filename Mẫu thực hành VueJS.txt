@@ -1,0 +1,63 @@
+I,Tạo 1 component
+    -Import component
+    -Khai báo trong component trong script export
+    -Sử dụng
+
+
+
+
+
+
+
+II, Tạo các router 
+-Cài vue-router
+-import vue-router vào main.js
+-Vue.use(VueRouter)
+-Tại component chứa router khai báo <router-view></router-view>
+-Tại component là router khai báo (  <router-link to="/routerName">Go to Foo</router-link> )
+-Tại main.js:
+    + const routes = [
+                    { path: '/routerName', component: componentName },
+                    { path: '/routerName', component: componentName }
+                    ]
+    + const router = new VueRouter({
+                    routes 
+                    })
+    + const app = new Vue({
+                    router
+                    }).$mount('#app')
+
+
+
+
+III,Các component tương tác ẩn hiện :
+1,Component con và cha
+    -sử dụng props ở child
+2,$emit
+    -$emit('định danh của event', dữ liệu muốn truyền đi)
+3,Các bước
+    -Cpn cha: khai báo các func mà con có thể dùng
+    -Cpn con: định nghĩa các props
+
+
+
+
+
+
+IV, Get data Using API
+1,Install axios
+2, created() {
+    axios.get('http://api.manhnv.net/api/customers/').then(respone=>{
+      this.customers=respone.data
+    })
+
+    có thể dùng mounted hoặc create tùy trường hợp
+
+    Dùng v-for để render dữ liệu
+    <tr v-for="customer in customers" :key="customer.customerId">
+    render dữ liệu vào ô :  {{ customer.CustomerCode }}
+
+
+
+V,Biding dữ liệu vào bảng
+1, v-bind:value=""

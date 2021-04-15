@@ -1,0 +1,93 @@
+#content {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    right: 0px;
+    bottom: 0px;
+    /* background-color: yellow; */
+    /* padding-left:  24px; */
+    padding: 24px;
+}
+
+#content .paging-bar {
+    height: 56px;
+    background-color: #fff;
+}
+
+.paging-bar {
+    border-top: 1px solid #bbbbbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    z-index: 1 !important;
+}
+
+.btn-pagenumber.btn-pagenumber-selected,
+.btn-pagenumber-selected:hover {
+    background-color: #019160;
+    color: #ffffff;
+}
+
+.btn-pagenumber {
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #e9ebee;
+    cursor: pointer !important;
+}
+
+.btn-pagenumber:focus {
+    background-color: #019160;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: navajowhite;
+    outline: none;
+}
+
+.paging-bar .paging-record-info {
+    position: absolute;
+    left: 16px;
+}
+
+.paging-bar .paging-record-option {
+    position: absolute;
+    right: 16px;
+}
+
+.paging-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-select-page {
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    cursor: pointer;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    cursor: pointer;
+}
+
+.m-btn-firstpage {
+    background-image: url('../../icon/btn-firstpage.svg');
+}
+
+.m-btn-prev-page {
+    background-image: url('../../icon/btn-prev-page.svg');
+}
+
+.m-btn-next-page {
+    background-image: url('../../icon/btn-next-page.svg');
+}
+
+.m-btn-lastpage {
+    background-image: url('../../icon/btn-lastpage.svg');
+}
